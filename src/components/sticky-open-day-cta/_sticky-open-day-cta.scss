@@ -1,0 +1,27 @@
+@use "../../assets/styles/__vars/colours";
+@use "../../assets/styles/__vars/spacing";
+
+.sticky-open-day-cta {
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: 20;
+    display: none;
+    background: colours.$dark-blue;
+    color: white;
+    box-shadow: 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.15);
+
+    &.is-visible {
+        display: block;
+    }
+
+    & .button {
+        margin: spacing.$spacing-md;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: spacing.$spacing-md;
+    }
+}
