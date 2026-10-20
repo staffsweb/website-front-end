@@ -48,6 +48,10 @@
     @include mixins.button--digital-blue;
   }
 
+  &--burgundy {
+    @include mixins.button--burgundy;
+  }
+
   &--granite {
     @include mixins.button--granite;
   }

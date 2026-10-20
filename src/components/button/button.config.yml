@@ -59,6 +59,12 @@ variants:
       classes: ['button--digital-blue']
       text: 'Digital Blue Coloured Button'
 
+  - name: burgundy
+    label: "Color: Burgundy"
+    context:
+      classes: ['button--burgundy']
+      text: 'Burgundy Coloured Button'
+
   - name: grey
     label: "Color: Grey"
     context:
