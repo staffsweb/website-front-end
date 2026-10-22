@@ -185,6 +185,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;accolade__source&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
         
     </code>
@@ -220,13 +221,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-7c5a73cdab8b786ca3a25611d822fae4">_accolade.scss</option>
+                <option value="file-09ed31141f90c12929d3c3581759c46e">_accolade.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-7c5a73cdab8b786ca3a25611d822fae4" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-09ed31141f90c12929d3c3581759c46e" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -295,6 +296,57 @@
             }
         }
     }
+}
+
+<span class="hljs-selector-class">.accolade-2026</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">flex-direction</span>: column;
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">0</span>;
+
+    &amp; <span class="hljs-selector-tag">img</span>, &amp; svg  {
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+        <span class="hljs-attribute">width</span>: auto;
+        <span class="hljs-attribute">margin-left</span>: auto;
+        <span class="hljs-attribute">margin-right</span>: auto;
+    }
+
+    &amp;__figure {
+        <span class="hljs-attribute">background-color</span>: white;
+        <span class="hljs-attribute">margin-bottom</span>: -<span class="hljs-number">1.5rem</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    }
+
+    &amp; <span class="hljs-selector-tag">h3</span> {
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0</span>;
+    }
+
+    &amp;__content {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.125rem</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
+        <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+        <span class="hljs-attribute">padding</span>: spacing.<span class="hljs-variable">$spacing-xl</span> spacing.<span class="hljs-variable">$spacing-2xl</span> <span class="hljs-number">0</span> spacing.<span class="hljs-variable">$spacing-2xl</span>;
+        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$dark-blue</span>;
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid colours.<span class="hljs-variable">$grey</span>;
+        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">5px</span> solid colours.<span class="hljs-variable">$dark-blue</span>;
+    }
+
+    &amp;-container {
+        <span class="hljs-attribute">display</span>: flex;
+        <span class="hljs-attribute">flex-direction</span>: column;
+        <span class="hljs-attribute">justify-content</span>: center;
+        gap: spacing.<span class="hljs-variable">$spacing-lg</span>;
+
+        <span class="hljs-keyword">@media</span>(<span class="hljs-attribute">min-width</span>: map.get(breakpoints.<span class="hljs-variable">$breakpoint-stages</span>, <span class="hljs-string">&#x27;mobile-wide&#x27;</span>)) {
+            <span class="hljs-attribute">flex-direction</span>: row;
+            <span class="hljs-attribute">align-items</span>: stretch;
+        }
+    }
 }</pre>
                             </code>
                             
@@ -307,11 +359,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/accolade/_accolade.scss</span>
+                    <span class="Meta-value">src\components\accolade\_accolade.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">2.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -335,7 +387,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="./accolade--default.html">
@@ -344,6 +396,10 @@
             
                 <a href="./accolade--divider.html">
                     <span>Divider</span>
+                </a>, 
+            
+                <a href="./accolade--home-page-2026.html">
+                    <span>Home Page 2026</span>
                 </a>
             
             </span>
@@ -369,7 +425,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/accolade/accolade--item.twig</span>
+            <span class="Meta-value">src\components\accolade\accolade--item.twig</span>
         </li>
         
         
@@ -919,6 +975,40 @@
 
 
 <span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./accolade--home-page-2026.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="accolade--home-page-2026"
+                data-handle="accolade--home-page-2026"
+            >
+                <span>Home Page 2026</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -4219,6 +4309,40 @@
 
 
 <span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./masthead--home-page-2026.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="masthead--home-page-2026"
+                data-handle="masthead--home-page-2026"
+            >
+                <span>Home Page 2026</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>

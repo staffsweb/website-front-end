@@ -222,20 +222,26 @@
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
 
                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+
                             Apply now
                         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
 
                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button  button--grey&quot;</span>&gt;</span>
+
                             Book an open day
                         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;masthead__course-hero&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../images/masthead1.jpg&quot;</span> /&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../images/masthead4.jpg&quot;</span> /&gt;</span>
+
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -337,13 +343,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-1d431c63f05d2d06376672554910efc5">_masthead.scss</option>
+                <option value="file-3f48b519b697cfac10fb54023001fb1f">_masthead.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-1d431c63f05d2d06376672554910efc5" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-3f48b519b697cfac10fb54023001fb1f" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -698,6 +704,116 @@
     }
   }
 
+  &amp;-home-2026 {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1920px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+    <span class="hljs-attribute">min-height</span>: <span class="hljs-number">40rem</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+
+    &amp; &gt; <span class="hljs-selector-class">.wrap</span> {
+      <span class="hljs-attribute">position</span>: static;
+      <span class="hljs-attribute">display</span>: flex;
+      <span class="hljs-attribute">flex-direction</span>: column;
+      <span class="hljs-attribute">min-height</span>: inherit;
+    }
+
+    &amp;__hero {
+      <span class="hljs-attribute">position</span>: absolute;
+      inset: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">z-index</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">overflow</span>: hidden;
+    }
+
+    &amp;__img {
+      <span class="hljs-attribute">display</span>: block;
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+      <span class="hljs-selector-tag">object</span>-fit: cover;
+    }
+
+    &amp;__accolade {
+      <span class="hljs-attribute">position</span>: absolute;
+      <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">max-width</span>: <span class="hljs-number">12rem</span>;
+      <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+      <span class="hljs-attribute">padding</span>: spacing.<span class="hljs-variable">$spacing-lg</span> spacing.<span class="hljs-variable">$spacing-xl</span> spacing.<span class="hljs-variable">$spacing-5xl</span> spacing.<span class="hljs-variable">$spacing-2xl</span>;
+      <span class="hljs-attribute">background</span>: radial-gradient(
+        ellipse at top right,
+        rgba(black, <span class="hljs-number">0.85</span>) <span class="hljs-number">0%</span>,
+        rgba(black, <span class="hljs-number">0.35</span>) <span class="hljs-number">50%</span>,
+        rgba(black, <span class="hljs-number">0</span>) <span class="hljs-number">80%</span>
+      );
+      <span class="hljs-attribute">color</span>: white;
+
+      &amp; <span class="hljs-selector-tag">h2</span> {
+        <span class="hljs-attribute">color</span>: white;
+        <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>; 
+      }
+
+      &amp; hr {
+        <span class="hljs-attribute">margin</span>: spacing.<span class="hljs-variable">$spacing-sm</span> <span class="hljs-number">0</span>;
+      }
+    }
+
+    &amp;__story {
+      <span class="hljs-attribute">position</span>: absolute;
+      <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+      <span class="hljs-attribute">box-sizing</span>: border-box;
+      <span class="hljs-attribute">padding</span>: spacing.<span class="hljs-variable">$spacing-5xl</span> <span class="hljs-number">0</span> spacing.<span class="hljs-variable">$spacing-lg</span>;
+      <span class="hljs-attribute">background</span>: linear-gradient(
+        to bottom,
+        rgba(black, <span class="hljs-number">0</span>) <span class="hljs-number">0%</span>,
+        rgba(black, <span class="hljs-number">0.35</span>) <span class="hljs-number">35%</span>,
+        rgba(black, <span class="hljs-number">0.75</span>) <span class="hljs-number">65%</span>,
+        rgba(black, <span class="hljs-number">0.95</span>) <span class="hljs-number">100%</span>
+      );
+      <span class="hljs-attribute">color</span>: white;
+
+      <span class="hljs-selector-class">.grid</span> {
+        <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: breakpoints.<span class="hljs-variable">$third-breakpoint</span>) {
+          <span class="hljs-attribute">display</span>: flex;
+          <span class="hljs-attribute">flex-wrap</span>: wrap;
+          <span class="hljs-attribute">align-items</span>: baseline;
+
+          &amp;:after {
+            display: none;
+          }
+        }
+      }
+
+      &amp; <span class="hljs-selector-tag">h1</span> {
+        <span class="hljs-attribute">color</span>: white;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">3rem</span>;
+        <span class="hljs-attribute">margin-right</span>: spacing.<span class="hljs-variable">$spacing-xl</span>;
+      }
+
+      &amp; <span class="hljs-selector-tag">h2</span> {
+        <span class="hljs-attribute">color</span>: white;
+      }
+    }
+
+    &amp;__headline {
+      
+    }
+
+    <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: map.get(breakpoints.<span class="hljs-variable">$breakpoint-stages</span>, <span class="hljs-string">&#x27;mobile-wide&#x27;</span>)) {
+      <span class="hljs-attribute">min-height</span>: <span class="hljs-number">35rem</span>;
+
+      &amp;__accolade {
+        <span class="hljs-attribute">padding-top</span>: spacing.<span class="hljs-variable">$spacing-md</span>;
+      }
+
+      &amp;__story {
+        <span class="hljs-attribute">padding</span>: spacing.<span class="hljs-variable">$spacing-3xl</span> <span class="hljs-number">0</span> spacing.<span class="hljs-variable">$spacing-md</span>;
+      }
+    }
+  }
+
   &amp;__award-selector, &amp;__study-option-selector {
     <span class="hljs-attribute">margin-bottom</span>: spacing.<span class="hljs-variable">$spacing-lg</span>;
     <span class="hljs-attribute">width</span>: auto;
@@ -738,11 +854,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/masthead/_masthead.scss</span>
+                    <span class="Meta-value">src\components\masthead\_masthead.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">8.8 KB</span>
+                    <span class="Meta-value">11.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -766,7 +882,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="./masthead--default.html">
@@ -779,6 +895,10 @@
             
                 <a href="./masthead--course.html">
                     <span>Course</span>
+                </a>, 
+            
+                <a href="./masthead--home-page-2026.html">
+                    <span>Home Page 2026</span>
                 </a>, 
             
                 <a href="./masthead--homepage.html">
@@ -808,7 +928,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/masthead/masthead--course.twig</span>
+            <span class="Meta-value">src\components\masthead\masthead--course.twig</span>
         </li>
         
         <li class="Meta-item">
@@ -1356,6 +1476,40 @@
 
 
 <span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./accolade--home-page-2026.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="accolade--home-page-2026"
+                data-handle="accolade--home-page-2026"
+            >
+                <span>Home Page 2026</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -4656,6 +4810,40 @@
 
 
 <span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./masthead--home-page-2026.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="masthead--home-page-2026"
+                data-handle="masthead--home-page-2026"
+            >
+                <span>Home Page 2026</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
