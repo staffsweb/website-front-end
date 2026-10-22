@@ -10,3 +10,6 @@ variants:
   - name: course
     context:
       title: 'Computer Gameplay Design, Production and Programming'
+
+  - name: homepage-2026
+    status: wip

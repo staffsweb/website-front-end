@@ -345,6 +345,114 @@
     }
   }
 
+  &-home-2026 {
+    position: relative;
+    min-height: 40rem;
+    overflow: hidden;
+
+    & > .wrap {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      min-height: inherit;
+    }
+
+    &__hero {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__accolade {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 12rem;
+      z-index: 1;
+      padding: spacing.$spacing-lg spacing.$spacing-xl spacing.$spacing-5xl spacing.$spacing-2xl;
+      background: radial-gradient(
+        ellipse at top right,
+        rgba(black, 0.85) 0%,
+        rgba(black, 0.35) 50%,
+        rgba(black, 0) 80%
+      );
+      color: white;
+
+      & h2 {
+        color: white;
+        margin-top: 0; 
+      }
+
+      & hr {
+        margin: spacing.$spacing-sm 0;
+      }
+    }
+
+    &__story {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      box-sizing: border-box;
+      padding: spacing.$spacing-5xl 0 spacing.$spacing-lg;
+      background: linear-gradient(
+        to bottom,
+        rgba(black, 0) 0%,
+        rgba(black, 0.35) 35%,
+        rgba(black, 0.75) 65%,
+        rgba(black, 0.95) 100%
+      );
+      color: white;
+
+      .grid {
+        @media (min-width: breakpoints.$third-breakpoint) {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      & h1 {
+        color: white;
+        font-size: 3rem;
+        margin-right: spacing.$spacing-xl;
+      }
+
+      & h2 {
+        color: white;
+      }
+    }
+
+    &__headline {
+      
+    }
+
+    @media (max-width: map.get(breakpoints.$breakpoint-stages, 'mobile-wide')) {
+      min-height: 35rem;
+
+      &__accolade {
+        padding-top: spacing.$spacing-md;
+      }
+
+      &__story {
+        padding: spacing.$spacing-3xl 0 spacing.$spacing-md;
+      }
+    }
+  }
+
   &__award-selector, &__study-option-selector {
     margin-bottom: spacing.$spacing-lg;
     width: auto;
