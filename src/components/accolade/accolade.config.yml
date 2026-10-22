@@ -10,3 +10,6 @@ variants:
 
   - name: item
     hidden: true
+
+  - name: item-2026
+    hidden: true

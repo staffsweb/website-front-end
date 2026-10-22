@@ -1,0 +1,13 @@
+<article class="accolade-2026" aria-label="{{ headline }}">
+    {% if image %}
+        <div class="accolade-2026__figure  align-center">
+            <img src="{{ image | path }}" alt="" />
+        </div>
+    {% endif %}
+    <div class="accolade-2026__content">
+        <div class="title">
+            <h3>{{ headline }}</h3>
+        </div>
+        <p class="accolade-2026__source">{{ source }}</p>
+    </div>
+</article>
