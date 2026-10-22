@@ -76,13 +76,13 @@
 
     &__figure {
         background-color: white;
-        margin-bottom: -1rem;
+        margin-bottom: -1.5rem;
         padding: 5px;
         position: relative;
         z-index: 1;
     }
 
-    & .title {
+    & h3 {
         font-weight: 600;
         font-size: 1.5rem;
         margin-right: 0;
@@ -92,7 +92,7 @@
         font-size: 1.125rem;
         line-height: 1.2;
         flex: 1;
-        padding: spacing.$spacing-lg spacing.$spacing-2xl 0 spacing.$spacing-2xl;
+        padding: spacing.$spacing-xl spacing.$spacing-2xl 0 spacing.$spacing-2xl;
         text-align: center;
         color: colours.$dark-blue;
         border: 1px solid colours.$grey;
