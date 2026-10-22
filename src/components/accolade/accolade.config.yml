@@ -11,5 +11,8 @@ variants:
   - name: item
     hidden: true
 
+  - name: home-page-2026
+    status: wip
+  
   - name: item-2026
     hidden: true

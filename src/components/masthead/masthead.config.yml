@@ -11,5 +11,5 @@ variants:
     context:
       title: 'Computer Gameplay Design, Production and Programming'
 
-  - name: homepage-2026
+  - name: home-page-2026
     status: wip
