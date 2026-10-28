@@ -18,7 +18,7 @@
 
       @if $name == burgundy {
         .banner__cta > .button:first-child {
-          @include mixins.button--dark-blue;
+          @include mixins.button--digital-blue;
         }
       }
 
