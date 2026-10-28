@@ -1,5 +1,6 @@
 @use "../../assets/styles/__vars/breakpoints";
 @use "../../assets/styles/__vars/layout";
+@use "../../assets/styles/__vars/colours";
 
 .news-record {
     .align-right {
@@ -15,5 +16,12 @@
         button {
             cursor: pointer;
         }
+    }
+}
+
+#latest-news {
+    .card__title {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid (colours.$dark-blue);
     }
 }
