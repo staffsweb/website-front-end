@@ -3,6 +3,7 @@
 @use "../../assets/styles/__vars/colours";
 @use "../../assets/styles/__vars/functions";
 @use "../../assets/styles/__vars/spacing";
+@use "../../assets/styles/__vars/mixins";
 
 .banner {
   position: relative;
@@ -14,6 +15,12 @@
   @each $name, $value in colours.$banner-bg-colors {
     &--bg-#{$name} {
       background: #{$value};
+
+      @if $name == burgundy {
+        .banner__cta > .button:first-child {
+          @include mixins.button--dark-blue;
+        }
+      }
 
       @if (functions.choose-contrast-color($value) == white) {
         color: white;
