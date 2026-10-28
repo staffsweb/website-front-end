@@ -23,12 +23,12 @@
   border-radius: 0.25rem; // explicitly set this for inputs on iOS
   font-weight: 600;
 
-  background-color: colours.$neon;
-  background-image: linear-gradient(to left, colours.$neon 50%, black 50%);
+  background-color: colours.$burgundy;
+  background-image: linear-gradient(to left, colours.$burgundy 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   background-repeat: no-repeat; // needed for Chrome bug
-  color: black;
+  color: white;
 
   &:hover,
   &:focus,
