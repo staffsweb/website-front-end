@@ -357,6 +357,8 @@
     .megaNav__topLevel-link {
       // increase specificity to override > li > a' behaviour
 
+      color: white;
+
       @media (min-width: layout.$megaNav-full-breakpoint) {
         padding: spacing.$spacing-sm spacing.$spacing-lg;
         border: 0;
