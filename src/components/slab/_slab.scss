@@ -92,7 +92,11 @@
         color: white;
       }
 
-      & a.button:not([class*="button--"]) {
+      & .button:not([class*="button--"]),
+      & .button--pointy,
+      & .button--caps,
+      & .button--outline,
+      & .button--outline-dark-blue {
         @include mixins.button--digital-blue;
       }
     }
