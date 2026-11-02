@@ -10,7 +10,6 @@
   display: flex;
   margin-bottom: spacing.$spacing-xl;
   color: #fff;
-  border-radius: spacing.$spacing-xs;
 
   @each $name, $value in colours.$banner-bg-colors {
     &--bg-#{$name} {
@@ -44,7 +43,6 @@
   }
 
   &--with-image {
-    border-radius: 0;
 
     & .banner__cta, & .hgroup {
       text-align: center;
