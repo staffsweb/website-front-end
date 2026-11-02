@@ -4,7 +4,7 @@
 @use "../../assets/styles/__vars/spacing";
 
 .course-search {
-    background: colours.$dark-blue url('#{config.$image-theme-directory}/course-search-bg.svg') right top no-repeat;
+    background: colours.$dark-blue;
     background-size: 300px;
     padding: spacing.$spacing-4xl;
 
