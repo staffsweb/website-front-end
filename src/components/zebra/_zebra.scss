@@ -17,13 +17,20 @@
       &--bg-#{$name} {
         & .zebra__row:nth-child(odd) {
           background-color: white;
-
+    
           .zebra__body {
-            color: white;
-            & h2, & a:not(.button) {
+            @if $name == "teal" or $name == "pale-blue" {
+              color: colours.$dark-blue;
+              & h2, & a:not(.button) {
+                color: colours.$dark-blue;
+              }
+            } @else {
               color: white;
+              & h2, & a:not(.button) {
+                color: white;
+              }
             }
-
+    
             & .button:not([class*="button--"]),
             & .button--pointy,
             & .button--caps,
@@ -33,16 +40,22 @@
             }
           }
         }
-
+    
         & .zebra__row:nth-child(even) {
           .zebra__body {
             & h2, & a:not(.button) {
-              color: #{$value};
+              // If teal or pale-blue, override even rows with dark-blue too
+              @if $name == "teal" or $name == "pale-blue" {
+                color: colours.$dark-blue;
+              } @else {
+                color: #{$value};
+              }
             }
           }
         }
       }
     }
+    
   }
 
   &__row {

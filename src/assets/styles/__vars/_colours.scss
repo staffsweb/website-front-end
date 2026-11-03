@@ -219,8 +219,7 @@ $banner-bg-colors: (
   'burgundy': $burgundy,
   'dark-blue': $dark-blue,
   'digital-blue': $digital-blue,
-  'teal': $grey-50-pc, // CG: Polyfill for legacy colour
-  'grey': $grey-50-pc
+  'teal': $teal
 );
 
 $icon-box-colors: (
@@ -267,7 +266,8 @@ $callout-bg-colors: (
 $zebra-bg-colors: (
   'burgundy': $burgundy,
   'digital-blue': $digital-blue,
-  'teal': $teal
+  'teal': $pale-blue, // redesign 2026
+  'pale-blue': $pale-blue
 );
 
 $socialmedia-prime-colours: (
