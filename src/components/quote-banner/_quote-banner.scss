@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   color: white;
-  background: colours.$burgundy url('#{config.$image-theme-directory}/bg-knot-whole-red.svg');
+  background: colours.$burgundy url('#{config.$image-theme-directory}/bg-knot-whole-pale-blue.svg');
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 55%;
@@ -15,14 +15,6 @@
   @each $name, $value in colours.$banner-bg-colors {
     &--bg-#{$name} {
       background-color: #{$value};
-
-      @if $name == 'digital-blue' {
-        background-image: url('#{config.$image-theme-directory}/bg-knot-whole-neon.svg');
-      }
-
-      @else if $name == 'teal' {
-        background-image: url('#{config.$image-theme-directory}/bg-knot-whole-neon.svg');
-      }
 
     }
   }
