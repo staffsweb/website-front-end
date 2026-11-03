@@ -114,7 +114,7 @@
     color: white;
 
     & h1, & h2, & h3, & h4, & h5, & h6 {
-      color: colours.$neon;
+      color: colours.$pale-blue;
       padding-left: 0;
     }
 
@@ -128,7 +128,7 @@
   }
 
   &__ucas-code strong {
-    color: colours.$neon;
+    color: colours.$pale-blue;
     margin-right: spacing.$spacing-md;
   }
 
