@@ -395,7 +395,6 @@ $border-accent-width: spacing.$spacing-2xs;
   .is-style-intro {
     @include typescale('lg');
     @include line-height('normal');
-    max-width: layout.$line-length-max-rem;
     color: colours.$secondary;
     font-weight: 500;
 
