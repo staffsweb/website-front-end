@@ -33,6 +33,9 @@
   }
 
   &--reverse {
+    & {
+      background-position: left center;
+    }
     .quote-banner__flexContainer {
       flex-direction: row-reverse;
     }
@@ -60,6 +63,6 @@
 
   &__quoteContainer {
     margin: spacing.$spacing-xl layout.$grid-gutter;
-    flex: 1 1 20em;
+    flex: 1 1 15em;
   }
 }
