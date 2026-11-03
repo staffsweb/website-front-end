@@ -27,6 +27,12 @@
           color: white;
         }
       }
+      @else {
+        color: colours.$dark-blue;
+        & h2 {
+          color: colours.$dark-blue;
+        }
+      }
     }
   }
 
@@ -35,7 +41,7 @@
   }
 
   &--bg-dark-blue &__title {
-    color: colours.$neon;
+    color: colours.$pale-blue;
   }
 
   &--bg-dark-blue &__theme svg, &--bg-neon &__theme svg {
@@ -107,7 +113,6 @@
     position: relative;
     align-self: flex-end;
     box-sizing: border-box;
-    width: 70%;
     z-index: 1;
     padding: #{spacing.$spacing-xl} calc(#{spacing.$spacing-sm} + 2.5%) #{spacing.$spacing-md};
   }

@@ -219,7 +219,8 @@ $banner-bg-colors: (
   'burgundy': $burgundy,
   'dark-blue': $dark-blue,
   'digital-blue': $digital-blue,
-  'teal': $teal
+  'teal': $grey-50-pc, // CG: Polyfill for legacy colour
+  'grey': $grey-50-pc
 );
 
 $icon-box-colors: (
