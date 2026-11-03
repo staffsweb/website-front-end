@@ -481,7 +481,8 @@ a.card {
     padding: spacing.$spacing-xl spacing.$spacing-xl spacing.$spacing-2xl spacing.$spacing-xl;
   }
 
-  & a:hover,& a:hover .card__content p {
+  & a, & a:hover .card__content p {
+    color: colours.$dark-blue;
     text-decoration: none;
   }
 
