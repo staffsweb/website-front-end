@@ -128,8 +128,8 @@ $card-accent-colors: (
   'grey': $grey,
   // CG: The following will most likely be used for KSPs
   'pale-blue': $pale-blue,
-  'neon': $neon,
-  'neon-50-pc': $neon-50-pc,
+  'neon': $grey-50-pc,
+  'neon-50-pc': $grey-50-pc,
   'lavender': $lavender
 );
 
@@ -137,15 +137,15 @@ $testimonial-card-colors: (
   'burgundy': (
     'background': $burgundy,
     'color': white,
-    'contrast-color': $neon
+    'contrast-color': $pale-blue
   ),
   'digital-blue': (
     'background': $digital-blue,
     'color': white,
-    'contrast-color': $neon
+    'contrast-color': $pale-blue
   ),
   'neon': (
-    'background': $neon-50-pc,
+    'background': $grey-50-pc,
     'color': black,
     'contrast-color': $digital-blue
   )
