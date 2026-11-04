@@ -229,6 +229,9 @@ $border-accent-width: spacing.$spacing-2xs;
 
   li {
     margin-bottom: spacing.$spacing-xs;
+  }
+  
+  li::marker {
     color: colours.$dark-blue;
   }
 
