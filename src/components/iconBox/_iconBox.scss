@@ -49,6 +49,7 @@
 
   &__title {
     margin: 0 0 spacing.$spacing-sm;
+    line-height: spacing.$spacing-lg;
   }
 
   // --
@@ -88,12 +89,17 @@
 }
 
 a.iconBox {
+
+  .iconBox__title {
+    text-decoration: underline;
+    text-underline-offset: spacing.$spacing-2xs;
+  }
+
   &:hover {
     color: white;
 
     .iconBox__title {
-      color: white;
-      text-decoration: underline;
+      color: colours.$grey;
     }
 
     &.iconBox--bg-offwhite, &.iconBox--bg-neon, &.iconBox--bg-pale-blue, &.iconBox--bg-lavender, &.iconBox--bg-neon-50-pc
@@ -101,7 +107,7 @@ a.iconBox {
       color: inherit;
 
       .iconBox__title {
-        color: inherit;
+        color: colours.$grey--dark;
       }
     }
   }
