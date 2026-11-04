@@ -1,1 +1,5 @@
 status: ready
+
+variants:
+  - name: unstyled
+    notes: 'This will take the background / padding / colour / etc. of its container'
