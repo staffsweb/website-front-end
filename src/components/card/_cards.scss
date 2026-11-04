@@ -527,7 +527,7 @@ a.card {
     background-position: center center;
     background-repeat: no-repeat;
     border-left: none;
-    border: spacing.$spacing-4xs solid colours.$teal;
+    border: spacing.$spacing-4xs solid colours.$burgundy;
 
     @media (max-width: map.get(breakpoints.$breakpoint-stages, 'mobile-wide')) {
       background-image: none!important;
@@ -546,7 +546,7 @@ a.card {
       }
 
       > .title {
-        color: colours.$teal;
+        color: colours.$burgundy;
       }
 
       > :last-child {
