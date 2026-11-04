@@ -52,6 +52,10 @@
     @include mixins.button--burgundy;
   }
 
+  &--pale-blue {
+    @include mixins.button--pale-blue;
+  }
+
   &--granite {
     @include mixins.button--granite;
   }
