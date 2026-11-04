@@ -49,8 +49,7 @@ $card__internal-spacing: spacing.$spacing-sm;
     margin-bottom: spacing.$spacing-md;
 
     a {
-      color: #{colours.$primary};
-      color: var(--accent-color);
+      color: colours.$primary;
     }
   }
 
