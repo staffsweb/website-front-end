@@ -1,4 +1,5 @@
 @use "../../assets/styles/__vars/mixins";
+@use "../../assets/styles/__vars/colours";
 
 .button {
   // For the moment, these are defined as little mixins over in __vars/mixins so they can be included elsewhere
@@ -86,5 +87,12 @@
 
   &[disabled] {
     @include mixins.button--disabled;
+  }
+}
+
+[class *='bg-burgundy'] {
+  .button {
+    background-color: colours.$digital-blue;
+    background-image: linear-gradient(to left, colours.$digital-blue 50%, black 50%);
   }
 }
