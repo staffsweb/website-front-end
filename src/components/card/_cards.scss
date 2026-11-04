@@ -282,6 +282,12 @@ a.card {
       }
     }
   }
+
+  &.card--pale-blue {
+    & .blockquote__footer {
+      color: white;
+    }
+  }
 }
 
 .card--contact {
