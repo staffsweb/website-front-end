@@ -264,7 +264,7 @@ a.card {
     height: 0;
     padding-bottom: 5%;
     margin-left: -5%;
-    background: url('#{config.$image-theme-directory-icon}/icon-quote-primary.svg') no-repeat center center;
+    background: url('#{config.$image-theme-directory-icon}/icon-quote-burgundy.svg') no-repeat center center;
     background-size: contain;
   }
 
@@ -274,9 +274,15 @@ a.card {
   // Don't forget to add the SVG to the filesystem!
 
   @each $name, $value in colours.$card-accent-colors {
-    &.card--#{$name} {
+    
+    $modified-name: $name;
+    @if $name == 'pink' or $name == 'maroon' {
+      $modified-name: 'burgundy';
+    }
+  
+    &.card--#{$modified-name} {
       &:before {
-        background: transparent url('#{config.$image-theme-directory-icon}/icon-quote-#{$name}.svg') no-repeat center center;
+        background: transparent url('#{config.$image-theme-directory-icon}/icon-quote-#{$modified-name}.svg') no-repeat center center;
         background-size: contain;
       }
     }
