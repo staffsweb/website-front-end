@@ -4,6 +4,7 @@
 @use "../../assets/styles/__vars/config";
 @use "../../assets/styles/__vars/functions";
 @use "../../assets/styles/__vars/spacing";
+@use "../../assets/styles/__vars/mixins";
 
 .slab {
   position: relative;
@@ -89,6 +90,14 @@
       & .slab__content, & .slab__title {
         background-color: colours.$burgundy;
         color: white;
+      }
+
+      & .button:not([class*="button--"]),
+      & .button--pointy,
+      & .button--caps,
+      & .button--outline,
+      & .button--outline-dark-blue {
+        @include mixins.button--digital-blue;
       }
     }
 

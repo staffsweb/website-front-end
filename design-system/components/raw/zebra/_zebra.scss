@@ -1,5 +1,6 @@
 @use "../../assets/styles/__vars/colours";
 @use "../../assets/styles/__vars/spacing";
+@use "../../assets/styles/__vars/mixins";
 
 .zebra {
   $zebra-inline-breakpoint: 50rem;
@@ -21,6 +22,14 @@
             color: white;
             & h2, & a:not(.button) {
               color: white;
+            }
+
+            & .button:not([class*="button--"]),
+            & .button--pointy,
+            & .button--caps,
+            & .button--outline,
+            & .button--outline-dark-blue {
+              @include mixins.button--digital-blue;
             }
           }
         }

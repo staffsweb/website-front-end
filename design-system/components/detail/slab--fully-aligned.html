@@ -263,13 +263,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-f12673a69379746863da0a777e583080">_slab.scss</option>
+                <option value="file-5d0da290a7c4d9524476357958b942bf">_slab.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-f12673a69379746863da0a777e583080" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-5d0da290a7c4d9524476357958b942bf" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -283,6 +283,7 @@
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/config&quot;</span>;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/functions&quot;</span>;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/spacing&quot;</span>;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/mixins&quot;</span>;
 
 <span class="hljs-selector-class">.slab</span> {
   <span class="hljs-attribute">position</span>: relative;
@@ -368,6 +369,14 @@
       &amp; <span class="hljs-selector-class">.slab__content</span>, &amp; <span class="hljs-selector-class">.slab__title</span> {
         <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$burgundy</span>;
         <span class="hljs-attribute">color</span>: white;
+      }
+
+      &amp; <span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:not</span>([class*=&quot;button--&quot;]),
+      &amp; <span class="hljs-selector-class">.button--pointy</span>,
+      &amp; <span class="hljs-selector-class">.button--caps</span>,
+      &amp; <span class="hljs-selector-class">.button--outline</span>,
+      &amp; <span class="hljs-selector-class">.button--outline-dark-blue</span> {
+        <span class="hljs-keyword">@include</span> mixins.button--digital-blue;
       }
     }
 
@@ -467,11 +476,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src\components\slab\_slab.scss</span>
+                    <span class="Meta-value">src/components/slab/_slab.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">6 KB</span>
+                    <span class="Meta-value">6.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -573,7 +582,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src\components\slab\slab--fully-aligned.twig</span>
+            <span class="Meta-value">src/components/slab/slab--fully-aligned.twig</span>
         </li>
         
         <li class="Meta-item">

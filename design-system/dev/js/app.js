@@ -6445,7 +6445,7 @@ let newsAndEventsSearchInit = function () {
               .appendTo( ul );
         }
     });
-      $("#course-search__keywords").courseautocomplete({
+     $("#course-search__keywords").courseautocomplete({
       source: function(request, response) {
         $.ajax({
             url: "https://search.staffs.ac.uk/s/search.html",
@@ -6471,7 +6471,7 @@ let newsAndEventsSearchInit = function () {
         return false;
       }
     });
-      $("#global-search__keywords--courses").courseautocomplete({
+     $("#global-search__keywords--courses").courseautocomplete({
       source: function(request, response) {
         $.ajax({
             url: "https://search.staffs.ac.uk/s/search.html",
@@ -6580,8 +6580,7 @@ let newsAndEventsSearchInit = function () {
       });
     });
   };
-  let scrollToTop = function (elm) {
-    let offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 100;
+  let scrollToTop = function (elm, offset = 100) {
     $('html, body').animate({
       scrollTop: $(elm).offset().top - offset
     }, 200);

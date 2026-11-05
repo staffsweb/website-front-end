@@ -15,27 +15,16 @@
   }
 
   &--teal-with-peach {
-    background-color: colours.$teal!important;
-    background-image: url("../images/masthead-knot-peach.svg");
-    background-size: contain;
-    @media (max-width: map.get(breakpoints.$breakpoint-stages, 'tablet-wide')) {
-      background-size: cover;
-      background-position: calc(50% + 25rem) center;
+
+    & .title {
+      color: colours.$dark-blue!important;
     }
-    background-repeat: no-repeat;
-    background-position: right center;
+    
+    background-color: colours.$pale-blue!important;
   }
 
   &--digital-blue-with-pale-blue {
     background-color: colours.$digital-blue!important;
-    background-image: url("../images/masthead-knot-pale-blue.svg");
-    background-size: contain;
-    @media (max-width: map.get(breakpoints.$breakpoint-stages, 'tablet-wide')) {
-      background-size: cover;
-      background-position: calc(50% + 25rem) center;
-    }
-    background-repeat: no-repeat;
-    background-position: right center;
   }
 
   &--grey {
@@ -114,7 +103,7 @@
     color: white;
 
     & h1, & h2, & h3, & h4, & h5, & h6 {
-      color: colours.$neon;
+      color: colours.$pale-blue;
       padding-left: 0;
     }
 
@@ -128,7 +117,7 @@
   }
 
   &__ucas-code strong {
-    color: colours.$neon;
+    color: colours.$pale-blue;
     margin-right: spacing.$spacing-md;
   }
 

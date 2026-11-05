@@ -363,13 +363,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-f1178ad1ee66d7bdd33dfaf4dcb4d100">_banner.scss</option>
+                <option value="file-fc4a88ba4c8f74a34d952d4bdb8cf08c">_banner.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-f1178ad1ee66d7bdd33dfaf4dcb4d100" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-fc4a88ba4c8f74a34d952d4bdb8cf08c" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -382,6 +382,7 @@
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/colours&quot;</span>;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/functions&quot;</span>;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/spacing&quot;</span>;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/mixins&quot;</span>;
 
 <span class="hljs-selector-class">.banner</span> {
   <span class="hljs-attribute">position</span>: relative;
@@ -393,6 +394,12 @@
   <span class="hljs-keyword">@each</span> <span class="hljs-variable">$name</span>, <span class="hljs-variable">$value</span> in colours.<span class="hljs-variable">$banner-bg-colors</span> {
     &amp;--bg-#{<span class="hljs-variable">$name</span>} {
       <span class="hljs-attribute">background</span>: #{<span class="hljs-variable">$value</span>};
+
+      <span class="hljs-keyword">@if</span> <span class="hljs-variable">$name</span> == burgundy {
+        <span class="hljs-selector-class">.banner__cta</span> &gt; <span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:first</span>-child {
+          <span class="hljs-keyword">@include</span> mixins.button--digital-blue;
+        }
+      }
 
       <span class="hljs-keyword">@if</span> (functions.choose-contrast-color(<span class="hljs-variable">$value</span>) == white) {
         <span class="hljs-attribute">color</span>: white;
@@ -504,11 +511,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src\components\banner\_banner.scss</span>
+                    <span class="Meta-value">src/components/banner/_banner.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.3 KB</span>
+                    <span class="Meta-value">2.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -566,7 +573,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src\components\banner\banner.twig</span>
+            <span class="Meta-value">src/components/banner/banner.twig</span>
         </li>
         
         
