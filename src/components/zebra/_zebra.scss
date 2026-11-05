@@ -30,13 +30,15 @@
                 color: white;
               }
             }
-    
-            & .button:not([class*="button--"]),
-            & .button--pointy,
-            & .button--caps,
-            & .button--outline,
-            & .button--outline-dark-blue {
-              @include mixins.button--digital-blue;
+
+            @if $name != "digital-blue" {
+              & .button:not([class*="button--"]),
+              & .button--pointy,
+              & .button--caps,
+              & .button--outline,
+              & .button--outline-dark-blue {
+                @include mixins.button--digital-blue;
+              }
             }
           }
         }
