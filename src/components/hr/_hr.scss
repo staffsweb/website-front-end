@@ -3,7 +3,7 @@
 
 hr {
   position: relative;
-  // see base-elements in vars/_typography
+  border-color: colours.$grey;
 }
 
 .hr--primary, .hr--teal {
@@ -20,6 +20,7 @@ hr {
 
 .hr--compact {
   margin: spacing.$spacing-xl auto;
+  border-color: colours.$grey;
 }
 
 .hr--spaced {
