@@ -6,7 +6,7 @@ hr {
   // see base-elements in vars/_typography
 }
 
-.hr--primary {
+.hr--primary, .hr--teal {
   border-top-width: 2px;
   border-color: colours.$dark-blue;
 }
@@ -14,11 +14,6 @@ hr {
 .hr--burgundy {
   border-top-width: 2px;
   border-color: colours.$burgundy;
-}
-
-.hr--teal {
-  border-top-width: 2px;
-  border-color: colours.$teal;
 }
 
 // Spacing
