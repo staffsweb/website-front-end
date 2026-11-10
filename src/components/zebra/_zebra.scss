@@ -42,19 +42,6 @@
             }
           }
         }
-    
-        & .zebra__row:nth-child(even) {
-          .zebra__body {
-            & h2, & a:not(.button) {
-              // If teal or pale-blue, override even rows with dark-blue too
-              @if $name == "teal" or $name == "pale-blue" {
-                color: colours.$dark-blue;
-              } @else {
-                color: #{$value};
-              }
-            }
-          }
-        }
       }
     }
     
