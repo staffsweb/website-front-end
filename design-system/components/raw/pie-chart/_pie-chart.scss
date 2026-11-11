@@ -1,13 +1,16 @@
+
+@use "../../assets/styles/__vars/colours";
+
 .pie-chart {  
     .pie { transform: rotate(-90deg); width: 200px; height: 200px; background: #F4F4F4; border-radius: 50%; margin-bottom: 2rem; }
   
     .pie circle { fill: none; stroke: #F4F4F4; stroke-width: 99; -webkit-animation: rotate 1.5s ease-in; animation: rotate 1.5s ease-in; }
   
-    .pie .circle-1 { stroke: #D20052; }
+    .pie .circle-1 { stroke: colours.$dark-blue; }
   
-    .pie .circle-2 { stroke: #394851; }
+    .pie .circle-2 { stroke: colours.$grey; }
   
-    .pie .circle-3 { stroke: #C3C1C1; }
+    .pie .circle-3 { stroke: colours.$digital-blue; }
 
     &_key {
   
@@ -15,11 +18,11 @@
     
         & .key-color { display: inline-block; width: 17px; height: 17px; margin-right: 0.5rem; }
     
-        & .key-color.key-1 { background: #D20052; }
+        & .key-color.key-1 { background: colours.$dark-blue; }
     
-        & .key-color.key-2 { background: #394851; }
+        & .key-color.key-2 { background: colours.$grey; }
     
-        & .key-color.key-3 { background: #C3C1C1; }
+        & .key-color.key-3 { background: colours.$digital-blue; }
 
     }
   

@@ -3,12 +3,12 @@
 
 hr {
   position: relative;
-  // see base-elements in vars/_typography
+  border-color: colours.$grey;
 }
 
-.hr--primary {
+.hr--primary, .hr--teal {
   border-top-width: 2px;
-  border-color: colours.$grey-50-pc;
+  border-color: colours.$dark-blue;
 }
 
 .hr--burgundy {
@@ -16,15 +16,11 @@ hr {
   border-color: colours.$burgundy;
 }
 
-.hr--teal {
-  border-top-width: 2px;
-  border-color: colours.$teal;
-}
-
 // Spacing
 
 .hr--compact {
   margin: spacing.$spacing-xl auto;
+  border-color: colours.$grey;
 }
 
 .hr--spaced {

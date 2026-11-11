@@ -938,17 +938,17 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-280908b8711bc8fffc64005e6323f784">_megaNav.scss</option>
+                <option value="file-b7ef5859dcaf8d99dcddb707bba28176">_megaNav.scss</option>
                 
-                <option value="file-d1a552ee47c9ea06bc606b892679b5a8">megaNav.js</option>
+                <option value="file-cf2672c0994774ed5c9d7ec2e922cc6a">megaNav.js</option>
                 
-                <option value="file-ccd6903f844be8bbc90142f74527066f">readme.html</option>
+                <option value="file-b39da65bb461aff6cc66d4ac29c98325">readme.html</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-280908b8711bc8fffc64005e6323f784" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-b7ef5859dcaf8d99dcddb707bba28176" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -1045,7 +1045,7 @@
         <span class="hljs-attribute">top</span>: <span class="hljs-number">0.4em</span>;
         <span class="hljs-attribute">width</span>: <span class="hljs-number">2em</span>;
         <span class="hljs-attribute">height</span>: <span class="hljs-number">2em</span>;
-        <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-gt-primary.svg&#x27;</span>) no-repeat center center;
+        <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-gt-burgundy.svg&#x27;</span>) no-repeat center center;
         <span class="hljs-attribute">background-size</span>: <span class="hljs-number">0.5em</span>;
       }
     }
@@ -1123,7 +1123,7 @@
     <span class="hljs-attribute">width</span>: spacing.<span class="hljs-variable">$spacing-4xl</span>;
     <span class="hljs-attribute">height</span>: spacing.<span class="hljs-variable">$spacing-4xl</span>;
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0.1em</span>; <span class="hljs-comment">// yeah this is a bit of a magic number to get it to align with the closeLevel arrows</span>
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-x-primary.svg&#x27;</span>) no-repeat center center;
+    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-x-burgundy.svg&#x27;</span>) no-repeat center center;
     <span class="hljs-attribute">background-size</span>: <span class="hljs-number">1rem</span>;
     <span class="hljs-attribute">cursor</span>: pointer;
   }
@@ -1193,7 +1193,7 @@
       <span class="hljs-attribute">top</span>: <span class="hljs-variable">$row-padding-y</span>;
       <span class="hljs-attribute">width</span>: <span class="hljs-number">1em</span>;
       <span class="hljs-attribute">height</span>: <span class="hljs-number">2em</span>;
-      <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-gt-primary.svg&#x27;</span>) no-repeat center center;
+      <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-gt-burgundy.svg&#x27;</span>) no-repeat center center;
       <span class="hljs-attribute">background-size</span>: <span class="hljs-number">0.5em</span>;
       <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
     }
@@ -1315,8 +1315,6 @@
     <span class="hljs-selector-class">.megaNav__topLevel-link</span> {
       <span class="hljs-comment">// increase specificity to override &gt; li &gt; a&#x27; behaviour</span>
 
-      <span class="hljs-attribute">color</span>: white;
-
       <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: layout.<span class="hljs-variable">$megaNav-full-breakpoint</span>) {
         <span class="hljs-attribute">padding</span>: spacing.<span class="hljs-variable">$spacing-sm</span> spacing.<span class="hljs-variable">$spacing-lg</span>;
         <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
@@ -1341,8 +1339,8 @@
       &amp;-item {
         &amp;<span class="hljs-selector-class">.is-expanded</span> {
           <span class="hljs-comment">//background: #fff;</span>
-          <span class="hljs-attribute">box-shadow</span>: -<span class="hljs-number">1px</span> -<span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#d70a26</span>, -<span class="hljs-number">1px</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#d70a26</span>;
-          <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> -<span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#d70a26</span>, <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#d70a26</span>;
+          <span class="hljs-comment">// box-shadow: -1px -1px 0 #8a0045, -1px 1px 0 #8a0045;</span>
+          <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> -<span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#8a0045</span>, <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#8a0045</span>;
 
           &gt; <span class="hljs-selector-tag">a</span>:before {
             content: <span class="hljs-string">&#x27;&#x27;</span>;
@@ -1375,7 +1373,7 @@
           <span class="hljs-attribute">bottom</span>: <span class="hljs-number">1rem</span>;
           <span class="hljs-attribute">display</span>: block;
           <span class="hljs-attribute">width</span>: <span class="hljs-number">1px</span>;
-          <span class="hljs-attribute">background</span>: colours.<span class="hljs-variable">$red</span>;
+          <span class="hljs-attribute">background</span>: colours.<span class="hljs-variable">$burgundy</span>;
         }
       }
     }
@@ -1397,7 +1395,7 @@
           <span class="hljs-attribute">top</span>: <span class="hljs-number">0.4em</span>;
           <span class="hljs-attribute">width</span>: <span class="hljs-number">2em</span>;
           <span class="hljs-attribute">height</span>: <span class="hljs-number">2em</span>;
-          <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-gt-primary.svg&#x27;</span>) no-repeat center center;
+          <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-gt-burgundy.svg&#x27;</span>) no-repeat center center;
           <span class="hljs-attribute">background-size</span>: <span class="hljs-number">0.5em</span>;
         }
       }
@@ -1476,7 +1474,7 @@
             <span class="hljs-attribute">bottom</span>: <span class="hljs-number">1rem</span>;
             <span class="hljs-attribute">display</span>: block;
             <span class="hljs-attribute">width</span>: <span class="hljs-number">1px</span>;
-            <span class="hljs-attribute">background</span>: colours.<span class="hljs-variable">$red</span>;
+            <span class="hljs-attribute">background</span>: colours.<span class="hljs-variable">$burgundy</span>;
           }
 
           <span class="hljs-comment">//box-shadow: 0 1em 1em rgba(black, 0.15);</span>
@@ -1486,7 +1484,7 @@
               <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
               &gt; <span class="hljs-selector-tag">a</span> {
                 <span class="hljs-comment">//box-shadow: -1px -1px 0 #d70a26, -1px 1px 0 #d70a26;</span>
-                <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> -<span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#d70a26</span>, <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#d70a26</span>;
+                <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> -<span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#8a0045</span>, <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">#8a0045</span>;
 
                 &amp;:before {
                   content: <span class="hljs-string">&#x27;&#x27;</span>;
@@ -1523,7 +1521,7 @@
               <span class="hljs-attribute">bottom</span>: <span class="hljs-number">1rem</span>;
               <span class="hljs-attribute">display</span>: block;
               <span class="hljs-attribute">width</span>: <span class="hljs-number">1px</span>;
-              <span class="hljs-attribute">background</span>: colours.<span class="hljs-variable">$red</span>;
+              <span class="hljs-attribute">background</span>: colours.<span class="hljs-variable">$burgundy</span>;
             }
           }
         }
@@ -1589,7 +1587,7 @@
     <span class="hljs-comment">//  }</span>
     <span class="hljs-comment">//</span>
     <span class="hljs-comment">//  &amp;:hover {</span>
-    <span class="hljs-comment">//    box-shadow: inset 0 3px 0 $red;</span>
+    <span class="hljs-comment">//    box-shadow: inset 0 3px 0 $burgundy;</span>
     <span class="hljs-comment">//    background: black;</span>
     <span class="hljs-comment">//  }</span>
     <span class="hljs-comment">//}</span>
@@ -1627,16 +1625,16 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/megaNav/_megaNav.scss</span>
+                    <span class="Meta-value">src\components\megaNav\_megaNav.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">14.4 KB</span>
+                    <span class="Meta-value">15.1 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-d1a552ee47c9ea06bc606b892679b5a8" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-cf2672c0994774ed5c9d7ec2e922cc6a" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -1661,16 +1659,16 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/megaNav/megaNav.js</span>
+                    <span class="Meta-value">src\components\megaNav\megaNav.js</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">174 Bytes</span>
+                    <span class="Meta-value">179 Bytes</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-ccd6903f844be8bbc90142f74527066f" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-b39da65bb461aff6cc66d4ac29c98325" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -1702,11 +1700,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/megaNav/readme.html</span>
+                    <span class="Meta-value">src\components\megaNav\readme.html</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">284 Bytes</span>
+                    <span class="Meta-value">296 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1749,7 +1747,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/megaNav/megaNav.twig</span>
+            <span class="Meta-value">src\components\megaNav\megaNav.twig</span>
         </li>
         
         <li class="Meta-item">
@@ -2826,40 +2824,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -3384,6 +3348,40 @@
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4451,19 +4449,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4481,6 +4493,46 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

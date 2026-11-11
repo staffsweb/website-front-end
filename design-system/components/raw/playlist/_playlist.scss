@@ -3,7 +3,7 @@
 @use "../../assets/styles/__vars/spacing";
 
 h2.playlist__title {
-    color: colours.$neon!important;
+    color: colours.$pale-blue!important;
 }
 
 a.playlist__link {
@@ -12,14 +12,14 @@ a.playlist__link {
     text-decoration: none;
     color: white;
     transition: all 125ms;
-    background-image: url(#{config.$image-theme-directory-icon}/icon-play-circle-red.svg);
+    background-image: url(#{config.$image-theme-directory-icon}/icon-play-circle-digital-blue.svg);
     background-position: spacing.$spacing-xs center;
     background-repeat: no-repeat;
     background-size: spacing.$spacing-xl;
 
     &.selected {
         color: colours.$dark-blue!important;
-        background-color: colours.$neon;
+        background-color: colours.$pale-blue;
     }
 
     &:hover {
@@ -35,7 +35,7 @@ a.playlist__link {
 
         &.selected {
             color: colours.$dark-blue!important;
-            background-color: colours.$neon;
+            background-color: colours.$pale-blue;
         }
     
         &:hover {

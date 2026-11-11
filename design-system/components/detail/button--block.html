@@ -179,6 +179,7 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button  button--block&quot;</span>&gt;</span>
+
     Block-level Element Button
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
         
@@ -215,13 +216,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-fc0e4b7eb6c575a99fa511c74178abf3">_buttons.scss</option>
+                <option value="file-588dd094c193d82a45c2319daf0630d0">_buttons.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-fc0e4b7eb6c575a99fa511c74178abf3" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-588dd094c193d82a45c2319daf0630d0" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -230,6 +231,7 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/mixins&quot;</span>;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/colours&quot;</span>;
 
 <span class="hljs-selector-class">.button</span> {
   <span class="hljs-comment">// For the moment, these are defined as little mixins over in __vars/mixins so they can be included elsewhere</span>
@@ -283,6 +285,10 @@
     <span class="hljs-keyword">@include</span> mixins.button--burgundy;
   }
 
+  &amp;--pale-blue {
+    <span class="hljs-keyword">@include</span> mixins.button--pale-blue;
+  }
+
   &amp;--granite {
     <span class="hljs-keyword">@include</span> mixins.button--granite;
   }
@@ -326,11 +332,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/button/_buttons.scss</span>
+                    <span class="Meta-value">src\components\button\_buttons.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -354,7 +360,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(15)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(16)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="./button--default.html">
@@ -395,6 +401,10 @@
             
                 <a href="./button--burgundy.html">
                     <span>Color: Burgundy</span>
+                </a>, 
+            
+                <a href="./button--pale-blue.html">
+                    <span>Color: Pale Blue</span>
                 </a>, 
             
                 <a href="./button--grey.html">
@@ -440,7 +450,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/button/button.twig</span>
+            <span class="Meta-value">src\components\button\button.twig</span>
         </li>
         
         
@@ -1499,40 +1509,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -2057,6 +2033,40 @@
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3124,19 +3134,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3154,6 +3178,46 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

@@ -4,12 +4,15 @@
 @use "../../assets/styles/__vars/spacing";
 
 .course-search {
-    background: colours.$dark-blue url('#{config.$image-theme-directory}/course-search-bg.svg') right top no-repeat;
-    background-size: 300px;
-    padding: spacing.$spacing-4xl;
 
-    &, & a, & h2 {
-        color: white;
+    &--bg-dark-blue {
+        background: colours.$dark-blue;
+        background-size: 300px;
+        padding: spacing.$spacing-4xl;
+
+        &, & a, & h2 {
+            color: white;
+        }
     }
 
     &__keywords {
@@ -31,6 +34,18 @@
     }
     & .button:hover {
         cursor: pointer;
+    }
+
+    &--unstyled {
+
+        & a {
+            color: colours.$dark-blue;
+            border-bottom-color: colours.$dark-blue!important;
+        }
+        
+        & h2, & h3 {
+            color: colours.$dark-blue;
+        }
     }
 }
 @media (min-width: breakpoints.$third-breakpoint) {

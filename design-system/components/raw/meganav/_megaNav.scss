@@ -87,7 +87,7 @@
         top: 0.4em;
         width: 2em;
         height: 2em;
-        background: url('#{config.$image-theme-directory-icon}/icon-gt-primary.svg') no-repeat center center;
+        background: url('#{config.$image-theme-directory-icon}/icon-gt-burgundy.svg') no-repeat center center;
         background-size: 0.5em;
       }
     }
@@ -165,7 +165,7 @@
     width: spacing.$spacing-4xl;
     height: spacing.$spacing-4xl;
     margin-top: 0.1em; // yeah this is a bit of a magic number to get it to align with the closeLevel arrows
-    background: url('#{config.$image-theme-directory-icon}/icon-x-primary.svg') no-repeat center center;
+    background: url('#{config.$image-theme-directory-icon}/icon-x-burgundy.svg') no-repeat center center;
     background-size: 1rem;
     cursor: pointer;
   }
@@ -235,7 +235,7 @@
       top: $row-padding-y;
       width: 1em;
       height: 2em;
-      background: url('#{config.$image-theme-directory-icon}/icon-gt-primary.svg') no-repeat center center;
+      background: url('#{config.$image-theme-directory-icon}/icon-gt-burgundy.svg') no-repeat center center;
       background-size: 0.5em;
       transform: rotate(180deg);
     }
@@ -357,8 +357,6 @@
     .megaNav__topLevel-link {
       // increase specificity to override > li > a' behaviour
 
-      color: white;
-
       @media (min-width: layout.$megaNav-full-breakpoint) {
         padding: spacing.$spacing-sm spacing.$spacing-lg;
         border: 0;
@@ -383,8 +381,8 @@
       &-item {
         &.is-expanded {
           //background: #fff;
-          box-shadow: -1px -1px 0 #d70a26, -1px 1px 0 #d70a26;
-          box-shadow: 0 -1px 0 #d70a26, 0 1px 0 #d70a26;
+          // box-shadow: -1px -1px 0 #8a0045, -1px 1px 0 #8a0045;
+          box-shadow: 0 -1px 0 #8a0045, 0 1px 0 #8a0045;
 
           > a:before {
             content: '';
@@ -417,7 +415,7 @@
           bottom: 1rem;
           display: block;
           width: 1px;
-          background: colours.$red;
+          background: colours.$burgundy;
         }
       }
     }
@@ -439,7 +437,7 @@
           top: 0.4em;
           width: 2em;
           height: 2em;
-          background: url('#{config.$image-theme-directory-icon}/icon-gt-primary.svg') no-repeat center center;
+          background: url('#{config.$image-theme-directory-icon}/icon-gt-burgundy.svg') no-repeat center center;
           background-size: 0.5em;
         }
       }
@@ -518,7 +516,7 @@
             bottom: 1rem;
             display: block;
             width: 1px;
-            background: colours.$red;
+            background: colours.$burgundy;
           }
 
           //box-shadow: 0 1em 1em rgba(black, 0.15);
@@ -528,7 +526,7 @@
               background: #fff;
               > a {
                 //box-shadow: -1px -1px 0 #d70a26, -1px 1px 0 #d70a26;
-                box-shadow: 0 -1px 0 #d70a26, 0 1px 0 #d70a26;
+                box-shadow: 0 -1px 0 #8a0045, 0 1px 0 #8a0045;
 
                 &:before {
                   content: '';
@@ -565,7 +563,7 @@
               bottom: 1rem;
               display: block;
               width: 1px;
-              background: colours.$red;
+              background: colours.$burgundy;
             }
           }
         }
@@ -631,7 +629,7 @@
     //  }
     //
     //  &:hover {
-    //    box-shadow: inset 0 3px 0 $red;
+    //    box-shadow: inset 0 3px 0 $burgundy;
     //    background: black;
     //  }
     //}
