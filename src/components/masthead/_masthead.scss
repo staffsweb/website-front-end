@@ -384,6 +384,7 @@
 
       & hr {
         margin: spacing.$spacing-sm 0;
+        border-color: white;
       }
     }
 
@@ -403,6 +404,10 @@
         rgba(black, 0.95) 100%
       );
       color: white;
+
+      & li::marker {
+        color: white;
+      }
 
       .grid {
         @media (min-width: breakpoints.$third-breakpoint) {
@@ -435,7 +440,7 @@
       min-height: 35rem;
 
       &__accolade {
-        padding-top: spacing.$spacing-md;
+        display: none;
       }
 
       &__story {

@@ -65,10 +65,12 @@
       background-color: #{$value};
       @if (functions.choose-contrast-color($value) == white) {
         color: white;
-        & a:not(.button), & h2 {
+        & a:not(.button), & h2, & li::marker {
           color: white;
         }
       }
+
+
     }
   }
 

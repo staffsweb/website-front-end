@@ -369,13 +369,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-5d0da290a7c4d9524476357958b942bf">_slab.scss</option>
+                <option value="file-f12673a69379746863da0a777e583080">_slab.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-5d0da290a7c4d9524476357958b942bf" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-f12673a69379746863da0a777e583080" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -450,10 +450,12 @@
       <span class="hljs-attribute">background-color</span>: #{<span class="hljs-variable">$value</span>};
       <span class="hljs-keyword">@if</span> (functions.choose-contrast-color(<span class="hljs-variable">$value</span>) == white) {
         <span class="hljs-attribute">color</span>: white;
-        &amp; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>(.button), &amp; <span class="hljs-selector-tag">h2</span> {
+        &amp; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>(.button), &amp; <span class="hljs-selector-tag">h2</span>, &amp; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
           <span class="hljs-attribute">color</span>: white;
         }
       }
+
+
     }
   }
 
@@ -517,33 +519,14 @@
     }
   }
   
-  &amp;--bg-knot-grey {
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;data:image/svg+xml,&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 657 376&quot; style=&quot;enable-background:new 0 0 657 376;&quot; xml:space=&quot;preserve&quot;&gt;&lt;path fill=&quot;%23E0DFE8&quot; d=&quot;M657,10c0,0-135,143-154,228c0,0-97-26-278,10S0,326.3,0,326.3V377l657-1&quot;/&gt;&lt;/svg&gt;&#x27;</span>) right bottom no-repeat;
-    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
-  }
-
-  &amp;--bg-knot-neon {
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;data:image/svg+xml,&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 657 376&quot; style=&quot;enable-background:new 0 0 657 376;&quot; xml:space=&quot;preserve&quot;&gt;&lt;path fill=&quot;%23E1FF9A&quot; d=&quot;M657,10c0,0-135,143-154,228c0,0-97-26-278,10S0,326.3,0,326.3V377l657-1&quot;/&gt;&lt;/svg&gt;&#x27;</span>) right bottom no-repeat;
-    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
-  }
-
-  &amp;--bg-knot-blue {
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;data:image/svg+xml,&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 657 376&quot; style=&quot;enable-background:new 0 0 657 376;&quot; xml:space=&quot;preserve&quot;&gt;&lt;path fill=&quot;%23bdf7e3&quot; d=&quot;M657,10c0,0-135,143-154,228c0,0-97-26-278,10S0,326.3,0,326.3V377l657-1&quot;/&gt;&lt;/svg&gt;&#x27;</span>) right bottom no-repeat;
-    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
-  }
-
-  &amp;--bg-knot-peach {
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;data:image/svg+xml,&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 657 376&quot; style=&quot;enable-background:new 0 0 657 376;&quot; xml:space=&quot;preserve&quot;&gt;&lt;path fill=&quot;%23febea5&quot; d=&quot;M657,10c0,0-135,143-154,228c0,0-97-26-278,10S0,326.3,0,326.3V377l657-1&quot;/&gt;&lt;/svg&gt;&#x27;</span>) right bottom no-repeat;
-    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
-  }
-
-  &amp;--bg-knot-yellow {
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;data:image/svg+xml,&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 657 376&quot; style=&quot;enable-background:new 0 0 657 376;&quot; xml:space=&quot;preserve&quot;&gt;&lt;path fill=&quot;%23ffffae&quot; d=&quot;M657,10c0,0-135,143-154,228c0,0-97-26-278,10S0,326.3,0,326.3V377l657-1&quot;/&gt;&lt;/svg&gt;&#x27;</span>) right bottom no-repeat;
-    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
-  }
-
-  &amp;--bg-knot-lavender {
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;data:image/svg+xml,&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 657 376&quot; style=&quot;enable-background:new 0 0 657 376;&quot; xml:space=&quot;preserve&quot;&gt;&lt;path fill=&quot;%23e8c7ff&quot; d=&quot;M657,10c0,0-135,143-154,228c0,0-97-26-278,10S0,326.3,0,326.3V377l657-1&quot;/&gt;&lt;/svg&gt;&#x27;</span>) right bottom no-repeat;
+  &amp;--bg-knot-grey,
+  &amp;--bg-knot-neon,
+  &amp;--bg-knot-blue,   
+  &amp;--bg-knot-peach,
+  &amp;--bg-knot-yellow,   
+  &amp;--bg-knot-lavender,
+  &amp;--bg-knot-pale-blue {
+    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;data:image/svg+xml,&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 657 376&quot; style=&quot;enable-background:new 0 0 657 376;&quot; xml:space=&quot;preserve&quot;&gt;&lt;path fill=&quot;%23D9F7F0&quot; d=&quot;M657,10c0,0-135,143-154,228c0,0-97-26-278,10S0,326.3,0,326.3V377l657-1&quot;/&gt;&lt;/svg&gt;&#x27;</span>) right bottom no-repeat;
     <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
   }
   &amp;--bg-blue-ldn {
@@ -582,11 +565,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/slab/_slab.scss</span>
+                    <span class="Meta-value">src\components\slab\_slab.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">6.1 KB</span>
+                    <span class="Meta-value">4.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -688,7 +671,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/slab/slab--examples.twig</span>
+            <span class="Meta-value">src\components\slab\slab--examples.twig</span>
         </li>
         
         <li class="Meta-item">
@@ -1756,40 +1739,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -2314,6 +2263,40 @@
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3381,19 +3364,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3411,6 +3408,46 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

@@ -109,6 +109,16 @@
   }
 }
 
+@mixin button--pale-blue {
+  background-image: linear-gradient(to left, colours.$pale-blue 50%, black 50%);
+  color: colours.$dark-blue;
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+
 @mixin button--granite {
   background-image: linear-gradient(to left, colours.$granite--ldn 50%, black 50%);
   color: white;

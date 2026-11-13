@@ -361,13 +361,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-7d9bcbf226f41250ebb2ecd1cad47554">_iconBox.scss</option>
+                <option value="file-9ff901243cad3ac24fa6be3191f9d0c9">_iconBox.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-7d9bcbf226f41250ebb2ecd1cad47554" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-9ff901243cad3ac24fa6be3191f9d0c9" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -388,7 +388,6 @@
   <span class="hljs-attribute">background</span>: colours.<span class="hljs-variable">$neutral--primary</span>;
   <span class="hljs-attribute">color</span>: white;
   <span class="hljs-attribute">text-decoration</span>: none;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0.25rem</span>;
   <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 
   <span class="hljs-comment">// --</span>
@@ -427,6 +426,7 @@
 
   &amp;__title {
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> spacing.<span class="hljs-variable">$spacing-sm</span>;
+    <span class="hljs-attribute">line-height</span>: spacing.<span class="hljs-variable">$spacing-lg</span>;
   }
 
   <span class="hljs-comment">// --</span>
@@ -466,12 +466,17 @@
 }
 
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.iconBox</span> {
+
+  <span class="hljs-selector-class">.iconBox__title</span> {
+    <span class="hljs-attribute">text-decoration</span>: underline;
+    text-underline-offset: spacing.<span class="hljs-variable">$spacing-2xs</span>;
+  }
+
   &amp;<span class="hljs-selector-pseudo">:hover</span> {
     <span class="hljs-attribute">color</span>: white;
 
     <span class="hljs-selector-class">.iconBox__title</span> {
-      <span class="hljs-attribute">color</span>: white;
-      <span class="hljs-attribute">text-decoration</span>: underline;
+      <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$grey</span>;
     }
 
     &amp;<span class="hljs-selector-class">.iconBox--bg-offwhite</span>, &amp;<span class="hljs-selector-class">.iconBox--bg-neon</span>, &amp;<span class="hljs-selector-class">.iconBox--bg-pale-blue</span>, &amp;<span class="hljs-selector-class">.iconBox--bg-lavender</span>, &amp;<span class="hljs-selector-class">.iconBox--bg-neon-50-pc</span>
@@ -479,7 +484,7 @@
       <span class="hljs-attribute">color</span>: inherit;
 
       <span class="hljs-selector-class">.iconBox__title</span> {
-        <span class="hljs-attribute">color</span>: inherit;
+        <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$grey--dark</span>;
       }
     }
   }
@@ -503,11 +508,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/iconBox/_iconBox.scss</span>
+                    <span class="Meta-value">src\components\iconBox\_iconBox.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.1 KB</span>
+                    <span class="Meta-value">2.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -565,7 +570,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/iconBox/iconBox--social-media.twig</span>
+            <span class="Meta-value">src\components\iconBox\iconBox--social-media.twig</span>
         </li>
         
         
@@ -1624,40 +1629,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -2182,6 +2153,40 @@
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3249,19 +3254,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3279,6 +3298,46 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

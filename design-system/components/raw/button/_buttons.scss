@@ -1,4 +1,5 @@
 @use "../../assets/styles/__vars/mixins";
+@use "../../assets/styles/__vars/colours";
 
 .button {
   // For the moment, these are defined as little mixins over in __vars/mixins so they can be included elsewhere
@@ -50,6 +51,10 @@
 
   &--burgundy {
     @include mixins.button--burgundy;
+  }
+
+  &--pale-blue {
+    @include mixins.button--pale-blue;
   }
 
   &--granite {

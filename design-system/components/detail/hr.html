@@ -206,13 +206,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-3efe8007861c3341c5c65c95946f900b">_hr.scss</option>
+                <option value="file-d7edde64bfdec4d5034079ac68d85387">_hr.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-3efe8007861c3341c5c65c95946f900b" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-d7edde64bfdec4d5034079ac68d85387" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -225,12 +225,12 @@
 
 hr {
   <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-comment">// see base-elements in vars/_typography</span>
+  <span class="hljs-attribute">border-color</span>: colours.<span class="hljs-variable">$grey</span>;
 }
 
-<span class="hljs-selector-class">.hr--primary</span> {
+<span class="hljs-selector-class">.hr--primary</span>, <span class="hljs-selector-class">.hr--teal</span> {
   <span class="hljs-attribute">border-top-width</span>: <span class="hljs-number">2px</span>;
-  <span class="hljs-attribute">border-color</span>: colours.<span class="hljs-variable">$grey-50-pc</span>;
+  <span class="hljs-attribute">border-color</span>: colours.<span class="hljs-variable">$dark-blue</span>;
 }
 
 <span class="hljs-selector-class">.hr--burgundy</span> {
@@ -238,15 +238,11 @@ hr {
   <span class="hljs-attribute">border-color</span>: colours.<span class="hljs-variable">$burgundy</span>;
 }
 
-<span class="hljs-selector-class">.hr--teal</span> {
-  <span class="hljs-attribute">border-top-width</span>: <span class="hljs-number">2px</span>;
-  <span class="hljs-attribute">border-color</span>: colours.<span class="hljs-variable">$teal</span>;
-}
-
 <span class="hljs-comment">// Spacing</span>
 
 <span class="hljs-selector-class">.hr--compact</span> {
   <span class="hljs-attribute">margin</span>: spacing.<span class="hljs-variable">$spacing-xl</span> auto;
+  <span class="hljs-attribute">border-color</span>: colours.<span class="hljs-variable">$grey</span>;
 }
 
 <span class="hljs-selector-class">.hr--spaced</span> {
@@ -267,11 +263,11 @@ hr {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/hr/_hr.scss</span>
+                    <span class="Meta-value">src\components\hr\_hr.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">557 Bytes</span>
+                    <span class="Meta-value">546 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -333,7 +329,7 @@ hr {
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/hr/hr.twig</span>
+            <span class="Meta-value">src\components\hr\hr.twig</span>
         </li>
         
         
@@ -1392,40 +1388,6 @@ hr {
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -1950,6 +1912,40 @@ hr {
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3017,19 +3013,33 @@ hr {
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3047,6 +3057,46 @@ hr {
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

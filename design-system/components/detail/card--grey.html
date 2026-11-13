@@ -179,6 +179,7 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card  card--grey&quot;</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card__content&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;h4 card__title&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Card Title (linked)<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>In addition to the recommendation from your Assessment Centre report:. If you are blind or have a visual impairment we can refer you for specialist support.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -217,13 +218,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-7f4f81d156c2c9184d3b11b1709674ee">_cards.scss</option>
+                <option value="file-7e0fbc6f97e26100b4088c0eb1948290">_cards.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-7f4f81d156c2c9184d3b11b1709674ee" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-7e0fbc6f97e26100b4088c0eb1948290" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -282,8 +283,7 @@
     <span class="hljs-attribute">margin-bottom</span>: spacing.<span class="hljs-variable">$spacing-md</span>;
 
     <span class="hljs-selector-tag">a</span> {
-      <span class="hljs-attribute">color</span>: #{colours.<span class="hljs-variable">$primary</span>};
-      <span class="hljs-attribute">color</span>: var(--accent-color);
+      <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$primary</span>;
     }
   }
 
@@ -498,7 +498,7 @@
     <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">5%</span>;
     <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">5%</span>;
-    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-quote-primary.svg&#x27;</span>) no-repeat center center;
+    <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-quote-burgundy.svg&#x27;</span>) no-repeat center center;
     <span class="hljs-attribute">background-size</span>: contain;
   }
 
@@ -508,11 +508,23 @@
   <span class="hljs-comment">// Don&#x27;t forget to add the SVG to the filesystem!</span>
 
   <span class="hljs-keyword">@each</span> <span class="hljs-variable">$name</span>, <span class="hljs-variable">$value</span> in colours.<span class="hljs-variable">$card-accent-colors</span> {
-    &amp;<span class="hljs-selector-class">.card--</span>#{<span class="hljs-variable">$name</span>} {
+    
+    <span class="hljs-variable">$modified-name</span>: <span class="hljs-variable">$name</span>;
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$name</span> == <span class="hljs-string">&#x27;pink&#x27;</span> <span class="hljs-keyword">or</span> <span class="hljs-variable">$name</span> == <span class="hljs-string">&#x27;maroon&#x27;</span> {
+      <span class="hljs-variable">$modified-name</span>: <span class="hljs-string">&#x27;burgundy&#x27;</span>;
+    }
+  
+    &amp;<span class="hljs-selector-class">.card--</span>#{<span class="hljs-variable">$modified-name</span>} {
       &amp;:before {
-        background: transparent url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-quote-#{$name}.svg&#x27;</span>) no-repeat center center;
+        background: transparent url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-quote-#{$modified-name}.svg&#x27;</span>) no-repeat center center;
         <span class="hljs-attribute">background-size</span>: contain;
       }
+    }
+  }
+
+  &amp;<span class="hljs-selector-class">.card--pale-blue</span> {
+    &amp; <span class="hljs-selector-class">.blockquote__footer</span> {
+      <span class="hljs-attribute">color</span>: white;
     }
   }
 }
@@ -572,7 +584,7 @@
         <span class="hljs-attribute">border-color</span>: map.get(<span class="hljs-variable">$value</span>, <span class="hljs-string">&quot;accent-color&quot;</span>);
 
         &amp;<span class="hljs-selector-pseudo">:hover</span> {
-          <span class="hljs-attribute">color</span>: black;
+          <span class="hljs-attribute">color</span>: white;
         }
       }
 
@@ -714,7 +726,8 @@
     <span class="hljs-attribute">padding</span>: spacing.<span class="hljs-variable">$spacing-xl</span> spacing.<span class="hljs-variable">$spacing-xl</span> spacing.<span class="hljs-variable">$spacing-2xl</span> spacing.<span class="hljs-variable">$spacing-xl</span>;
   }
 
-  &amp; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>,&amp; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.card__content</span> <span class="hljs-selector-tag">p</span> {
+  &amp; <span class="hljs-selector-tag">a</span>, &amp; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.card__content</span> <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$dark-blue</span>;
     <span class="hljs-attribute">text-decoration</span>: none;
   }
 
@@ -754,7 +767,7 @@
     <span class="hljs-attribute">background-position</span>: center center;
     <span class="hljs-attribute">background-repeat</span>: no-repeat;
     <span class="hljs-attribute">border-left</span>: none;
-    <span class="hljs-attribute">border</span>: spacing.<span class="hljs-variable">$spacing-4xs</span> solid colours.<span class="hljs-variable">$teal</span>;
+    <span class="hljs-attribute">border</span>: spacing.<span class="hljs-variable">$spacing-4xs</span> solid colours.<span class="hljs-variable">$burgundy</span>;
 
     <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: map.get(breakpoints.<span class="hljs-variable">$breakpoint-stages</span>, <span class="hljs-string">&#x27;mobile-wide&#x27;</span>)) {
       <span class="hljs-attribute">background-image</span>: none<span class="hljs-meta">!important</span>;
@@ -773,7 +786,7 @@
       }
 
       &gt; <span class="hljs-selector-class">.title</span> {
-        <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$teal</span>;
+        <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$burgundy</span>;
       }
 
       &gt; <span class="hljs-selector-pseudo">:last-child</span> {
@@ -805,11 +818,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/card/_cards.scss</span>
+                    <span class="Meta-value">src\components\card\_cards.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">11.6 KB</span>
+                    <span class="Meta-value">12.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -939,7 +952,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/card/card--grey.twig</span>
+            <span class="Meta-value">src\components\card\card--grey.twig</span>
         </li>
         
         
@@ -1998,40 +2011,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -2556,6 +2535,40 @@
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3623,19 +3636,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3653,6 +3680,46 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

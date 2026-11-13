@@ -26,29 +26,18 @@
               }
             } @else {
               color: white;
-              & h2, & a:not(.button) {
+              & h2, & a:not(.button), & li::marker {
                 color: white;
               }
             }
-    
-            & .button:not([class*="button--"]),
-            & .button--pointy,
-            & .button--caps,
-            & .button--outline,
-            & .button--outline-dark-blue {
-              @include mixins.button--digital-blue;
-            }
-          }
-        }
-    
-        & .zebra__row:nth-child(even) {
-          .zebra__body {
-            & h2, & a:not(.button) {
-              // If teal or pale-blue, override even rows with dark-blue too
-              @if $name == "teal" or $name == "pale-blue" {
-                color: colours.$dark-blue;
-              } @else {
-                color: #{$value};
+
+            @if $name != "digital-blue" {
+              & .button:not([class*="button--"]),
+              & .button--pointy,
+              & .button--caps,
+              & .button--outline,
+              & .button--outline-dark-blue {
+                @include mixins.button--digital-blue;
               }
             }
           }

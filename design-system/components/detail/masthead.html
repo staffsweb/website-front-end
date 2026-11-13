@@ -242,13 +242,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-1d431c63f05d2d06376672554910efc5">_masthead.scss</option>
+                <option value="file-3f48b519b697cfac10fb54023001fb1f">_masthead.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-1d431c63f05d2d06376672554910efc5" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-3f48b519b697cfac10fb54023001fb1f" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -273,27 +273,16 @@
   }
 
   &amp;--teal-with-peach {
-    <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$teal</span><span class="hljs-meta">!important</span>;
-    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;../images/masthead-knot-peach.svg&quot;</span>);
-    <span class="hljs-attribute">background-size</span>: contain;
-    <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: map.get(breakpoints.<span class="hljs-variable">$breakpoint-stages</span>, <span class="hljs-string">&#x27;tablet-wide&#x27;</span>)) {
-      <span class="hljs-attribute">background-size</span>: cover;
-      <span class="hljs-attribute">background-position</span>: calc(<span class="hljs-number">50%</span> + <span class="hljs-number">25rem</span>) center;
+
+    &amp; <span class="hljs-selector-class">.title</span> {
+      <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$dark-blue</span><span class="hljs-meta">!important</span>;
     }
-    <span class="hljs-attribute">background-repeat</span>: no-repeat;
-    <span class="hljs-attribute">background-position</span>: right center;
+    
+    <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$pale-blue</span><span class="hljs-meta">!important</span>;
   }
 
   &amp;--digital-blue-with-pale-blue {
     <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$digital-blue</span><span class="hljs-meta">!important</span>;
-    <span class="hljs-attribute">background-image</span>: url(<span class="hljs-string">&quot;../images/masthead-knot-pale-blue.svg&quot;</span>);
-    <span class="hljs-attribute">background-size</span>: contain;
-    <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: map.get(breakpoints.<span class="hljs-variable">$breakpoint-stages</span>, <span class="hljs-string">&#x27;tablet-wide&#x27;</span>)) {
-      <span class="hljs-attribute">background-size</span>: cover;
-      <span class="hljs-attribute">background-position</span>: calc(<span class="hljs-number">50%</span> + <span class="hljs-number">25rem</span>) center;
-    }
-    <span class="hljs-attribute">background-repeat</span>: no-repeat;
-    <span class="hljs-attribute">background-position</span>: right center;
   }
 
   &amp;--grey {
@@ -372,7 +361,7 @@
     <span class="hljs-attribute">color</span>: white;
 
     &amp; <span class="hljs-selector-tag">h1</span>, &amp; <span class="hljs-selector-tag">h2</span>, &amp; <span class="hljs-selector-tag">h3</span>, &amp; <span class="hljs-selector-tag">h4</span>, &amp; <span class="hljs-selector-tag">h5</span>, &amp; <span class="hljs-selector-tag">h6</span> {
-      <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$neon</span>;
+      <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$pale-blue</span>;
       <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
     }
 
@@ -386,7 +375,7 @@
   }
 
   &amp;__ucas-<span class="hljs-selector-tag">code</span> <span class="hljs-selector-tag">strong</span> {
-    <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$neon</span>;
+    <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$pale-blue</span>;
     <span class="hljs-attribute">margin-right</span>: spacing.<span class="hljs-variable">$spacing-md</span>;
   }
 
@@ -653,6 +642,7 @@
 
       &amp; hr {
         <span class="hljs-attribute">margin</span>: spacing.<span class="hljs-variable">$spacing-sm</span> <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">border-color</span>: white;
       }
     }
 
@@ -672,6 +662,10 @@
         rgba(black, <span class="hljs-number">0.95</span>) <span class="hljs-number">100%</span>
       );
       <span class="hljs-attribute">color</span>: white;
+
+      &amp; <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
+        <span class="hljs-attribute">color</span>: white;
+      }
 
       <span class="hljs-selector-class">.grid</span> {
         <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: breakpoints.<span class="hljs-variable">$third-breakpoint</span>) {
@@ -704,7 +698,7 @@
       <span class="hljs-attribute">min-height</span>: <span class="hljs-number">35rem</span>;
 
       &amp;__accolade {
-        <span class="hljs-attribute">padding-top</span>: spacing.<span class="hljs-variable">$spacing-md</span>;
+        <span class="hljs-attribute">display</span>: none;
       }
 
       &amp;__story {
@@ -753,11 +747,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/masthead/_masthead.scss</span>
+                    <span class="Meta-value">src\components\masthead\_masthead.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">10.9 KB</span>
+                    <span class="Meta-value">10.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -827,7 +821,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/masthead/masthead.twig</span>
+            <span class="Meta-value">src\components\masthead\masthead.twig</span>
         </li>
         
         <li class="Meta-item">
@@ -1906,40 +1900,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -2464,6 +2424,40 @@
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3531,19 +3525,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3561,6 +3569,46 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

@@ -243,13 +243,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-863f696089f3c509e67337aea11e6bc6">_playlist.scss</option>
+                <option value="file-8ba02f472254d969564e9c343a002632">_playlist.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-863f696089f3c509e67337aea11e6bc6" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-8ba02f472254d969564e9c343a002632" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -262,7 +262,7 @@
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/spacing&quot;</span>;
 
 <span class="hljs-selector-tag">h2</span><span class="hljs-selector-class">.playlist__title</span> {
-    <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$neon</span><span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$pale-blue</span><span class="hljs-meta">!important</span>;
 }
 
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.playlist__link</span> {
@@ -271,14 +271,14 @@
     <span class="hljs-attribute">text-decoration</span>: none;
     <span class="hljs-attribute">color</span>: white;
     <span class="hljs-attribute">transition</span>: all <span class="hljs-number">125ms</span>;
-    <span class="hljs-attribute">background-image</span>: url(#{config.<span class="hljs-variable">$image-theme-directory-icon</span>}/icon-play-circle-red.svg);
+    <span class="hljs-attribute">background-image</span>: url(#{config.<span class="hljs-variable">$image-theme-directory-icon</span>}/icon-play-circle-digital-blue.svg);
     <span class="hljs-attribute">background-position</span>: spacing.<span class="hljs-variable">$spacing-xs</span> center;
     <span class="hljs-attribute">background-repeat</span>: no-repeat;
     <span class="hljs-attribute">background-size</span>: spacing.<span class="hljs-variable">$spacing-xl</span>;
 
     &amp;<span class="hljs-selector-class">.selected</span> {
         <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$dark-blue</span><span class="hljs-meta">!important</span>;
-        <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$neon</span>;
+        <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$pale-blue</span>;
     }
 
     &amp;<span class="hljs-selector-pseudo">:hover</span> {
@@ -294,7 +294,7 @@
 
         &amp;<span class="hljs-selector-class">.selected</span> {
             <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$dark-blue</span><span class="hljs-meta">!important</span>;
-            <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$neon</span>;
+            <span class="hljs-attribute">background-color</span>: colours.<span class="hljs-variable">$pale-blue</span>;
         }
     
         &amp;<span class="hljs-selector-pseudo">:hover</span> {
@@ -314,11 +314,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/playlist/_playlist.scss</span>
+                    <span class="Meta-value">src\components\playlist\_playlist.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -361,7 +361,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/playlist/playlist.twig</span>
+            <span class="Meta-value">src\components\playlist\playlist.twig</span>
         </li>
         
         
@@ -1420,40 +1420,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./box--neon.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="box--neon"
-                data-handle="box--neon"
-            >
-                <span>Background: Neon</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./box--pale-blue.html"
                 data-role="tree-link"
                 
@@ -1978,6 +1944,40 @@
                 data-handle="button--burgundy"
             >
                 <span>Color: Burgundy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--pale-blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--pale-blue"
+                data-handle="button--pale-blue"
+            >
+                <span>Color: Pale Blue</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3045,19 +3045,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-course-search">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-course-search-items">
+                    Course Search
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-course-search-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./course-search.html"
+                href="./course-search--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="course-search"
-                data-handle="course-search"
+                data-test="course-search--default"
+                data-handle="course-search--default"
             >
-                <span>Course Search</span>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3075,6 +3089,46 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./course-search--unstyled.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="course-search--unstyled"
+                data-handle="course-search--unstyled"
+            >
+                <span>Unstyled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         

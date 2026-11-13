@@ -89,10 +89,3 @@
     @include mixins.button--disabled;
   }
 }
-
-[class *='bg-burgundy'] {
-  .button {
-    background-color: colours.$digital-blue;
-    background-image: linear-gradient(to left, colours.$digital-blue 50%, black 50%);
-  }
-}

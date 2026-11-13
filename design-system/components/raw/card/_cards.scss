@@ -49,8 +49,7 @@ $card__internal-spacing: spacing.$spacing-sm;
     margin-bottom: spacing.$spacing-md;
 
     a {
-      color: #{colours.$primary};
-      color: var(--accent-color);
+      color: colours.$primary;
     }
   }
 
@@ -265,7 +264,7 @@ a.card {
     height: 0;
     padding-bottom: 5%;
     margin-left: -5%;
-    background: url('#{config.$image-theme-directory-icon}/icon-quote-primary.svg') no-repeat center center;
+    background: url('#{config.$image-theme-directory-icon}/icon-quote-burgundy.svg') no-repeat center center;
     background-size: contain;
   }
 
@@ -275,11 +274,23 @@ a.card {
   // Don't forget to add the SVG to the filesystem!
 
   @each $name, $value in colours.$card-accent-colors {
-    &.card--#{$name} {
+    
+    $modified-name: $name;
+    @if $name == 'pink' or $name == 'maroon' {
+      $modified-name: 'burgundy';
+    }
+  
+    &.card--#{$modified-name} {
       &:before {
-        background: transparent url('#{config.$image-theme-directory-icon}/icon-quote-#{$name}.svg') no-repeat center center;
+        background: transparent url('#{config.$image-theme-directory-icon}/icon-quote-#{$modified-name}.svg') no-repeat center center;
         background-size: contain;
       }
+    }
+  }
+
+  &.card--pale-blue {
+    & .blockquote__footer {
+      color: white;
     }
   }
 }
@@ -339,7 +350,7 @@ a.card {
         border-color: map.get($value, "accent-color");
 
         &:hover {
-          color: black;
+          color: white;
         }
       }
 
@@ -481,7 +492,8 @@ a.card {
     padding: spacing.$spacing-xl spacing.$spacing-xl spacing.$spacing-2xl spacing.$spacing-xl;
   }
 
-  & a:hover,& a:hover .card__content p {
+  & a, & a:hover .card__content p {
+    color: colours.$dark-blue;
     text-decoration: none;
   }
 
@@ -521,7 +533,7 @@ a.card {
     background-position: center center;
     background-repeat: no-repeat;
     border-left: none;
-    border: spacing.$spacing-4xs solid colours.$teal;
+    border: spacing.$spacing-4xs solid colours.$burgundy;
 
     @media (max-width: map.get(breakpoints.$breakpoint-stages, 'mobile-wide')) {
       background-image: none!important;
@@ -540,7 +552,7 @@ a.card {
       }
 
       > .title {
-        color: colours.$teal;
+        color: colours.$burgundy;
       }
 
       > :last-child {

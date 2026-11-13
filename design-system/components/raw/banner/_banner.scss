@@ -10,7 +10,6 @@
   display: flex;
   margin-bottom: spacing.$spacing-xl;
   color: #fff;
-  border-radius: spacing.$spacing-xs;
 
   @each $name, $value in colours.$banner-bg-colors {
     &--bg-#{$name} {
@@ -28,6 +27,12 @@
           color: white;
         }
       }
+      @else {
+        color: colours.$dark-blue;
+        & h2 {
+          color: colours.$dark-blue;
+        }
+      }
     }
   }
 
@@ -36,7 +41,7 @@
   }
 
   &--bg-dark-blue &__title {
-    color: colours.$neon;
+    color: colours.$pale-blue;
   }
 
   &--bg-dark-blue &__theme svg, &--bg-neon &__theme svg {
@@ -44,7 +49,6 @@
   }
 
   &--with-image {
-    border-radius: 0;
 
     & .banner__cta, & .hgroup {
       text-align: center;
@@ -109,7 +113,6 @@
     position: relative;
     align-self: flex-end;
     box-sizing: border-box;
-    width: 70%;
     z-index: 1;
     padding: #{spacing.$spacing-xl} calc(#{spacing.$spacing-sm} + 2.5%) #{spacing.$spacing-md};
   }

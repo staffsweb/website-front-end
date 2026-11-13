@@ -3,8 +3,6 @@
     <div class="masthead__bg">
       {% if bgImg %}
         {{ bgImg }}
-      {% else %}
-        <img src="{{ ('/images/masthead-knot.svg') | path }}"/>
       {% endif %}
     </div>
     <div class="wrap">
@@ -41,8 +39,6 @@
     <div class="masthead__bg">
       {% if bgImg %}
         {{ bgImg }}
-      {% else %}
-        <img src="{{ ('/images/masthead-knot.svg') | path }}"/>
       {% endif %}
     </div>
     <div class="wrap">
@@ -85,8 +81,6 @@
     <div class="masthead__bg">
       {% if bgImg %}
         {{ bgImg }}
-      {% else %}
-        <img src="{{ ('/images/masthead-knot.svg') | path }}"/>
       {% endif %}
     </div>
     <div class="wrap">
@@ -99,6 +93,12 @@
       {% include '@title' with {
         text: '(If long, consider using h2 textElementStyle)',
         textElement: 'h6',
+        animate: true
+      } %}
+      {% include '@button' with {
+        text: 'Call to action',
+        url: '#',
+        classes: ['button--pale-blue'],
         animate: true
       } %}
     </div>
