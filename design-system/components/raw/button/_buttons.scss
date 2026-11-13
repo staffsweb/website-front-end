@@ -1,5 +1,6 @@
 @use "../../assets/styles/__vars/mixins";
 @use "../../assets/styles/__vars/colours";
+@use "../../assets/styles/__vars/config";
 
 .button {
   // For the moment, these are defined as little mixins over in __vars/mixins so they can be included elsewhere
@@ -83,6 +84,22 @@
 
   &--outline-slate {
     @include mixins.button--outline-dark-blue;
+  }
+
+  &--apply-now {
+    background-image:
+      url('#{config.$image-theme-directory-icon}/icon-external-link-white.svg'),
+      linear-gradient(to left, colours.$burgundy 50%, black 50%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 1.5em center, right bottom;
+    background-size: 1.5rem, 200% 100%;
+    padding-right: calc(2em + 1.5rem);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-position: right 1.5em center, 0% bottom;
+    }
   }
 
   &[disabled] {

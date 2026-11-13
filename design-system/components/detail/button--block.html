@@ -232,6 +232,7 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/mixins&quot;</span>;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/colours&quot;</span>;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../assets/styles/__vars/config&quot;</span>;
 
 <span class="hljs-selector-class">.button</span> {
   <span class="hljs-comment">// For the moment, these are defined as little mixins over in __vars/mixins so they can be included elsewhere</span>
@@ -317,6 +318,22 @@
     <span class="hljs-keyword">@include</span> mixins.button--outline-dark-blue;
   }
 
+  &amp;--apply-now {
+    <span class="hljs-attribute">background-image</span>:
+      url(<span class="hljs-string">&#x27;#{config.$image-theme-directory-icon}/icon-external-link-white.svg&#x27;</span>),
+      linear-gradient(to left, colours.<span class="hljs-variable">$burgundy</span> <span class="hljs-number">50%</span>, black <span class="hljs-number">50%</span>);
+    <span class="hljs-attribute">background-repeat</span>: no-repeat, no-repeat;
+    <span class="hljs-attribute">background-position</span>: right <span class="hljs-number">1.5em</span> center, right bottom;
+    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">1.5rem</span>, <span class="hljs-number">200%</span> <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">padding-right</span>: calc(<span class="hljs-number">2em</span> + <span class="hljs-number">1.5rem</span>);
+
+    &amp;<span class="hljs-selector-pseudo">:hover</span>,
+    &amp;<span class="hljs-selector-pseudo">:focus</span>,
+    &amp;<span class="hljs-selector-pseudo">:active</span> {
+      <span class="hljs-attribute">background-position</span>: right <span class="hljs-number">1.5em</span> center, <span class="hljs-number">0%</span> bottom;
+    }
+  }
+
   &amp;<span class="hljs-selector-attr">[disabled]</span> {
     <span class="hljs-keyword">@include</span> mixins.button--disabled;
   }
@@ -336,7 +353,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.5 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -5633,6 +5650,40 @@
 
 
 <span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./slab--apply-now.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="slab--apply-now"
+                data-handle="slab--apply-now"
+            >
+                <span>Apply Now</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
 
 
 </div>

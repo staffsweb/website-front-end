@@ -168,4 +168,10 @@
       color: inherit;
     }
   }
+
+  &--apply-now {
+    & h2, & .table--apply th {
+      color: colours.$pale-blue;
+    }
+  }
 }
