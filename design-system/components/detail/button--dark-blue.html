@@ -312,6 +312,16 @@
 
   &amp;--<span class="hljs-attribute">outline</span>-grey {
     <span class="hljs-keyword">@include</span> mixins.button--outline-grey;
+
+    <span class="hljs-selector-class">.slab--bg-dark-blue</span> &amp; {
+      <span class="hljs-attribute">color</span>: colours.<span class="hljs-variable">$grey-50-pc</span>;
+
+      &amp;<span class="hljs-selector-pseudo">:hover</span>,
+      &amp;<span class="hljs-selector-pseudo">:focus</span>,
+      &amp;<span class="hljs-selector-pseudo">:active</span> {
+        <span class="hljs-attribute">color</span>: black;
+      }
+    }
   }
 
   &amp;--<span class="hljs-attribute">outline</span>-slate {
@@ -353,7 +363,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>

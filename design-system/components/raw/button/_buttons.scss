@@ -80,6 +80,16 @@
 
   &--outline-grey {
     @include mixins.button--outline-grey;
+
+    .slab--bg-dark-blue & {
+      color: colours.$grey-50-pc;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: black;
+      }
+    }
   }
 
   &--outline-slate {
