@@ -209,5 +209,12 @@
       }
     }
   }
+}
 
+dt {
+  color: colours.$dark-blue;
+}
+dd {
+  margin-bottom: spacing.$spacing-sm;
+  margin-left: spacing.$spacing-lg;
 }
