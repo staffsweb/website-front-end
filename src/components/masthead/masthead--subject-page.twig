@@ -1,0 +1,42 @@
+<div class="masthead  masthead--with-image">
+  <div class="masthead__inner">
+    <div class="masthead__bg">
+      {% if bgImg %}
+        {{ bgImg }}
+      {% endif %}
+    </div>
+    <div class="wrap">
+      <div class="grid">
+        <div class="col-2/3@tablet">
+          {% include '@title' with {
+            text: 'Law degrees',
+            textElement: 'h1',
+            textElementStyle: 'h1',
+            animate: true
+          } %}
+          {% include '@button' with {
+            text: 'Browse courses'
+          } %}
+          {% include '@button' with {
+            text: 'Order a prospectus',
+            classes: ['button--digital-blue']
+          } %}
+          <div class="masthead__body">
+            <ul>
+              <li><strong>Legal Advice Service:</strong> Gain real-world experience and support the local community</li>
+              <li><strong>Hands-on Learning:</strong> Cutting-edge simulation spaces - put theory into practice</li>
+              <li><strong>Top 10 for Law:</strong> NSS 2026 - Full-time undergraduate courses</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1/3@tablet">
+          <img class="masthead__img  masthead__img--with-overlap" src="{{ ('/images/masthead-square-0.jpg') | path }}" alt="" />
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  {% include '@breadcrumbs' %}
+</div>

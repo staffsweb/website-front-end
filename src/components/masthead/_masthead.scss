@@ -334,6 +334,14 @@
     }
   }
 
+  &__body {
+    color: white;
+
+    & li::marker {
+      color: colours.$pale-blue;
+    }
+  }
+
   &-home-2026 {
     position: relative;
     max-width: 1920px;
