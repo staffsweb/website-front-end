@@ -21,7 +21,7 @@ $icon-accent-colors: (
 @use "_global/site-header";
 @use "_global/site-footer";
 
-//@import "../../components/*/*";
+//@use "../../components/*/*";
 @use "../../components/accolade/accolade";
 @use "../../components/accordion/accordion";
 @use "../../components/announcements/announcements";

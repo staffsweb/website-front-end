@@ -1,11 +1,11 @@
 // this is just a manifesto for everything in this folder so all vars can be included easily (in the right order)
 
-@use "functions";
-@use "config";
-@use "spacing";
-@use "colours";
-@use "breakpoints";
-@use "grid";
-@use "layout";
-@use "typography";
-@use "mixins";
+@forward "functions";
+@forward "config";
+@forward "spacing";
+@forward "colours";
+@forward "breakpoints";
+@forward "grid";
+@forward "layout";
+@forward "typography";
+@forward "mixins";
