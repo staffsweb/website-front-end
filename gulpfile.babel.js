@@ -206,9 +206,8 @@ function sass() {
   return gulp.src(PATHS.watch.sass)
       .pipe($.sourcemaps.init())
       .pipe(sassCompiler({
-        includePaths: PATHS.sass,
-        outputStyle: 'compressed',
-        precision: 4
+        loadPaths: PATHS.sass,
+        style: 'compressed'
       }).on('error', sassCompiler.logError))
       .pipe($.postcss(postCssPlugins))
       .pipe($.sourcemaps.write('.'))
@@ -224,7 +223,7 @@ function sassDist() {
 
   return gulp.src(PATHS.watch.sass)
       .pipe(sassCompiler({
-        includePaths: PATHS.sass
+        loadPaths: PATHS.sass
       }).on('error', sassCompiler.logError))
       .pipe($.postcss(postCssPlugins))
       .pipe($.cleanCss())
