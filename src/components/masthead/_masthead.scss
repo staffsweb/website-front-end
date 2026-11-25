@@ -4,6 +4,20 @@
 @use "../../assets/styles/__vars/layout";
 @use "../../assets/styles/__vars/spacing";
 
+@mixin course-subject-styles {
+  background: colours.$dark-blue;
+  color: white;
+
+  & h1, & h2, & h3, & h4, & h5, & h6 {
+    color: colours.$pale-blue;
+    padding-left: 0;
+  }
+
+  & .list--inline-bulleted li::before {
+    color: inherit;
+  }
+}
+
 .masthead {
   $overlay-breakpoint: breakpoints.$third-breakpoint + 10rem;
   background-color: colours.$dark-blue;//$offwhite;
@@ -99,16 +113,18 @@
   }
 
   &--course {
-    background: colours.$dark-blue;
-    color: white;
+    @include course-subject-styles;
+  }
 
-    & h1, & h2, & h3, & h4, & h5, & h6 {
-      color: colours.$pale-blue;
-      padding-left: 0;
+  &--subject {
+    @include course-subject-styles;
+
+    & h2 {
+      color: white;
     }
 
-    & .list--inline-bulleted li::before {
-      color: inherit;
+    & .masthead__body {
+      margin-bottom: 4rem;
     }
   }
 
